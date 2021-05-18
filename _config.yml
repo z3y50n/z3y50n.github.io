@@ -28,7 +28,7 @@ url: "z3y50n.github.io" # the base hostname & protocol for your site, e.g. http:
 github_username:  z3y50n
 
 # Build settings
-theme: minima
+theme: jekyll-theme-cayman
 plugins:
   - jekyll-feed
 
