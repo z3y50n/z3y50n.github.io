@@ -21,14 +21,14 @@
 title: My GSoC Blog
 email: dpdimpapag@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Welcome to my person GSoC blog for 2021. Here you can find some
+  Welcome to my personal GSoC blog for 2021. Here you can find some
   info about me and also keep yourself updated regarding my work progress
   for NetworkX!
 url: "z3y50n.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  z3y50n
 
 # Build settings
-theme: jekyll-theme-cayman
+theme: minima
 plugins:
   - jekyll-feed
 
