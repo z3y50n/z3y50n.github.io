@@ -1,0 +1,22 @@
+---
+layout: post
+title:  "GSoC 1st Update"
+date:   2021-06-21 10:53:25 +0300
+categories: GSoC Journal
+---
+
+# Community Bonding Period
+I was really excited to be selected to work for [NetworkX](https://github.com/networkx/) this summer. Scientific programming always intrigued me since it gives the opportunity to apply my theoretical knowledge that I acquired over the years of studying (and sometimes felt unecessary!) into real world problems.
+
+I had already contributed some code to NetworkX during the application period so I knew a bit my way around and also I had discussed with some of the developers regarding my project that I would apply for. Then came the first call with all the GSoC accepted students and mentors which was very nice to meet every member of the community and the mentors that I will be working more closely with during this summer. What was really nice, the developers really made us feel welcomed and were very willing to help us with anything. Lastly, we set up a weekly meeting with my 2 mentors that we will be discussing my progress and possible roadblocks along the way of working on my project.
+
+# A Little About My Project
+For this summer I will be working on implementing the Louvain Community Detection Algorithm. Community Detection is to try and group different nodes together based on similar characteristics or the number of edges between inner and outer nodes. This process can reveal hidden relations among the nodes inside the network. The Louvain algorithm is a very efficient greedy algorithm that detects communities inside a given graph and currently it is not implemented for NetworkX.
+
+# Coding Period So Far...
+One of the first decision me and my mentors had to take was the implementation we were going to follow for the algorithm (there is a [Python Library](https://github.com/taynaud/python-louvain) and also an implementation in pure C++ from the authors of the algorithm) and also the data structure we would use for the output. Therefore, my first days involved a lot of benchmarking for all sorts of different implementations, to test both the quality of the outputed communities and the speed. The C++ version was significantly faster so my decision was to write the algorithm from scratch myself using that implementation as a base template.
+
+Currently I am almost 95% done with implementing the algorithm (some minor bugs and fixes remain). The issue of speed though still remains since Python is much slower than C++ so me and my mentors should really discuss ways to improve the efficiency of the algorithm on very large graphs (while the C++ version runs at less than a second for a graph of 27770 nodes and 353324 edges my implementation and the python library complete the calculations in about 15 seconds).
+
+# Closing Thoughts
+So far it has been really fun and interesting working on the Louvain Algorithm and I really hope I manage to integrate it inside NetworkX by the end of summer. Along the way maybe I come across some other improvements I can contribute to the organization's code. Finally, my partnership with my mentors has been excellent and they are very helpful steering me into the right directions and discussing my concerns.

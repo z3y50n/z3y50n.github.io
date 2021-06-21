@@ -1,9 +1,0 @@
----
-layout: post
-title:  "Test Post"
-date:   2021-06-8 10:53:25 +0300
-categories: jekyll update
----
-This is my first test blog post
-
-
