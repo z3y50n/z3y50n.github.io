@@ -56,6 +56,7 @@ Just for completeness before I jump into the code presentation, I provide also t
 
 $$\Delta Q = \frac{k_{i,in}}{m} - \gamma\frac{k_i^{out} \cdot\Sigma_{tot}^{in} + k_i^{in} \cdot \Sigma_{tot}^{out}}{m^2}$$
 
+where $$k_i^{out}$$, $$k_i^{in}$$ are the outer and inner weighted degrees of node $$i$$ and $$\Sigma_{tot}^{in}$$, $$\Sigma_{tot}^{out}$$ are the sum of in-going and out-going links incident to nodes in $$C$$.
 
 # Implementing everything in Python
 The implementation of the algorithm for **NetworkX** can be found [here](https://github.com/networkx/networkx/pull/4929).
